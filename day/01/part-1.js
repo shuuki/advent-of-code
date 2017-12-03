@@ -37,3 +37,9 @@ const compare = (f,s) => {
 
 	return add;
 }
+
+// tests
+//uncaptcha('1122') // returns 3
+//uncaptcha('1111') // returns 4
+//uncaptcha('1234') // returns 0
+//uncaptcha('91212129') // returns 9
