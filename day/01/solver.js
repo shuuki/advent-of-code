@@ -1,4 +1,4 @@
-function uncaptcha (input) {
+const uncaptcha = (input) => {
 
 	let sum = 0;
 	let seq = input.split('');
@@ -19,14 +19,21 @@ function uncaptcha (input) {
 		check += add
 
 	}
-	return {sum, check};
+
+	return sum;
+	//return {sum, check};
 }
 
-function compare (f,s) {
+const compare = (f,s) => {
 
 	let add = 0;
 
-	if (f === s) { add = s; } else { add = 0; }
+	if (f === s) {
+		add = s;
+	}
+	else {
+		add = 0;
+	}
 
 	return add;
 }
